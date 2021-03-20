@@ -9,13 +9,13 @@
 主要用来创建调试工具、创建自定义属性面板、创建新的Editor窗口和工具达到扩展编辑器效果。
 OnGUI不建议使用在项目UI中
 
-![image-20210312001555611](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312001555611.png)
+![image-20210312001555611](images\image-20210312001555611.png)
 
 # Text
 
 
 
-![image-20210312001841801](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312001841801.png)
+![image-20210312001841801](images\image-20210312001841801.png)
 
 1. Font:字体
 2. Font Style：字体类型（Normal：正常
@@ -33,20 +33,20 @@ OnGUI不建议使用在项目UI中
 ```
 
 			7. Alignment：对齐方式
-   			8. Align By Geometr：几何方向对齐
-   			9. Horizontal Oveflow：水平方向溢出方式（Wrap：自动换行；Overflow：溢出显示）
-   			10. Vertical Overflow：垂直方向溢出方式（TrunCate：截断不显示；Overflow：溢出显示）
-   			11. Best Fit：字体最佳适应大小
-   			12. Color：颜色与透明度
-   			13. 脚本上有Color、Color32的区别，Color类是Float类型的参数，大小为0 ~ 1，Color32是Int类型参数，大小为0 ~ 255；
-   			14. Material：材质
-   			15. Raycast Target:射线投射目标，是否能够响应图形射线
+			8. Align By Geometr：几何方向对齐
+			9. Horizontal Oveflow：水平方向溢出方式（Wrap：自动换行；Overflow：溢出显示）
+			10. Vertical Overflow：垂直方向溢出方式（TrunCate：截断不显示；Overflow：溢出显示）
+			11. Best Fit：字体最佳适应大小
+			12. Color：颜色与透明度
+			13. 脚本上有Color、Color32的区别，Color类是Float类型的参数，大小为0 ~ 1，Color32是Int类型参数，大小为0 ~ 255；
+			14. Material：材质
+			15. Raycast Target:射线投射目标，是否能够响应图形射线
 
-![image-20210312002114957](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312002114957.png)
+![image-20210312002114957](images\image-20210312002114957.png)
 
 # Image
 
-![image-20210312002125441](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312002125441.png)
+![image-20210312002125441](images\image-20210312002125441.png)
 
 1. Source Image：源图像，Sprite图像资源
 2. Color：颜色与透明度；
@@ -68,7 +68,7 @@ OnGUI不建议使用在项目UI中
 
 # Raw Image
 
-![image-20210312002259415](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312002259415.png)
+![image-20210312002259415](images\image-20210312002259415.png)
 
 1. Texture：纹理；区别于Sprite
 2. Color：
@@ -80,26 +80,26 @@ OnGUI不建议使用在项目UI中
 8. 扩展：Outline/描边组件Shadow阴影组件
 9. 使用RawImage加Texture实现分镜显示
 
-![image-20210312002331718](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312002331718.png)
+![image-20210312002331718](images\image-20210312002331718.png)
 
 
 
 # Button
 
-![image-20210312002339119](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312002339119.png)
+![image-20210312002339119](images\image-20210312002339119.png)
 
 1. Interactable:是否可交互
 2. Transition: 确定控件以可视方式响应用户操作的方式的属性
 3. Navigation: 在EventSystem中，存在一个当前被选中按钮，我们可以通过按下上下左右，使被选中按钮进行更改。
 4. Visualize：显示控件之间的导航
 
-![image-20210312002351922](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312002351922.png)
+![image-20210312002351922](images\image-20210312002351922.png)
 
 
 
 # Toggle
 
-![image-20210312002410266](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312002410266.png)
+![image-20210312002410266](images\image-20210312002410266.png)
 
 1. Is On：默认是否选中。
 2. Toggle Transition：切换是是否有过渡效果，Fade表示有，None表示没有。
@@ -107,13 +107,13 @@ OnGUI不建议使用在项目UI中
 4. Group：设置分组。把多个Toggle放在同一个物体下，在这个物体上添加Toggle Group，并给Toggle赋值，就可以实现单选。
 5. On Value Change：当Toggle值改变时所调用的函数。
 
-![image-20210312002448248](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312002448248.png)
+![image-20210312002448248](images\image-20210312002448248.png)
 
 
 
 #  Slider
 
-![image-20210312002509728](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312002509728.png)
+![image-20210312002509728](images\image-20210312002509728.png)
 
 1. Fill Rect：填充矩形，滑块与最小值方向所构成的填充区域所要使用的填充矩形，如果滑动条的作用只是用于改变指定值，那么此选项建议置空，这个相比于Scrollbar所多出来的属性主要用于标识从最小值变化到当前值所经过的变化区域。
 2. Handle Rect：操作条矩形，当前值处于最小值与最大值之间比例的显示范围，也就是整个滑条的最大可控制范围。
@@ -128,11 +128,11 @@ OnGUI不建议使用在项目UI中
 
 # Scroll View
 
-![image-20210312002549389](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312002549389.png)
+![image-20210312002549389](images\image-20210312002549389.png)
 
-![image-20210312002553034](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312002553034.png)
+![image-20210312002553034](images\image-20210312002553034.png)
 
-![image-20210312002558361](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312002558361.png)
+![image-20210312002558361](images\image-20210312002558361.png)
 
 ## 结构
 
@@ -152,7 +152,7 @@ OnGUI不建议使用在项目UI中
 
 ## Grid Layout Group
 
-![image-20210312004714918](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312004714918.png)
+![image-20210312004714918](images\image-20210312004714918.png)
 
 
 
@@ -169,7 +169,7 @@ OnGUI不建议使用在项目UI中
 
 ## Scroll Rect
 
-![image-20210312004609991](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312004609991.png)
+![image-20210312004609991](images\image-20210312004609991.png)
 
 1. Content: 滚动的内容，可以是Text文字内容，也可以是图片内容
 2. Horizontal：允许水平方向滚动;Vertical：允许垂直方向滚动
@@ -190,7 +190,7 @@ OnGUI不建议使用在项目UI中
 
 # Dropdown
 
-![image-20210312003011130](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312003011130.png)
+![image-20210312003011130](images\image-20210312003011130.png)
 
 ## 结构
 
@@ -212,11 +212,11 @@ OnGUI不建议使用在项目UI中
 6. Value：当前所选选项的索引。0是第一个选项，1是第二个选项，依此类推。
 7. Options：下拉列表的文本和图像内容。可以为每个选项指定文本和图像。
 
-![image-20210312004512972](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312004512972.png)
+![image-20210312004512972](images\image-20210312004512972.png)
 
 # Input Field
 
-![image-20210312003154461](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312003154461.png)
+![image-20210312003154461](images\image-20210312003154461.png)
 
 1. Line Type：换行方式，当输入的内容超过输入域边界时：
 2. single Line：单行，不换行，继续延伸此行，输入域中的内容只有一行；
@@ -238,13 +238,13 @@ OnGUI不建议使用在项目UI中
 17. End Edit： 输入结束时事件
 18. Input Field同样可以用ISelectHandler接口实现选中事件监听
 
-![image-20210312004400820](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312004400820.png)
+![image-20210312004400820](images\image-20210312004400820.png)
 
 
 
 # Scrollbar
 
-![image-20210312002907578](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312002907578.png)
+![image-20210312002907578](images\image-20210312002907578.png)
 
 1. Handle Rect：操作条矩形，当前值处于最小值与最大值之间比例的显示范围，也就是整个滑条的最大可控制范围。
 2. Direction：方向，滚动条的方向，从左至右，从上至下还是其他的。
@@ -265,7 +265,7 @@ OnGUI不建议使用在项目UI中
 
 ## Rend Mode
 
-![image-20210312003823867](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312003823867.png)
+![image-20210312003823867](images\image-20210312003823867.png)
 
 1. Screen Space - Overlay
    屏幕空间-叠加，表示 Canvas 下的所有的 UI 控件永远位于屏幕的前面 , 不管有没有相机 , UI元素永远在屏幕最前面 ，主要是2D效果。在这种模式下，在不同的屏幕分辨率下画布会自动适配屏幕的分辨率大小。
@@ -280,14 +280,14 @@ Plane Distance：Canvas平面与摄像机的距离
 Sorting Layer：Canvas显示层级，存在多个Canvas时，层级越大，显示优先级越高 
 Order in Layer：层级顺序，同 Sorting Layer下，Order越大，显示优先级越高
   3.  World Space
-  世界空间，Canvas 就和普通的 3D 物体一样了 , 可以控制它的大小,旋转,缩放等 , 一般用来做血条。
-  Event Camera：用于响应事件的相机
-  Sorting Layer：Canvas显示层级，存在多个Canvas时，层级越大，显示优先级越高 
-  Order in Layer：层级顺序，同 Sorting Layer下，Order越大，显示优先级越高
+    世界空间，Canvas 就和普通的 3D 物体一样了 , 可以控制它的大小,旋转,缩放等 , 一般用来做血条。
+    Event Camera：用于响应事件的相机
+    Sorting Layer：Canvas显示层级，存在多个Canvas时，层级越大，显示优先级越高 
+    Order in Layer：层级顺序，同 Sorting Layer下，Order越大，显示优先级越高
 
 ## Canvas Scale
 
-![image-20210312003927194](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312003927194.png)
+![image-20210312003927194](images\image-20210312003927194.png)
 
 1、Constant Pixel Size：无论屏幕大小如何，都使UI元素保持相同的像素大小
 Scale Factor：以此比例缩放Canvas中的所有UI元素。
@@ -297,13 +297,13 @@ Scale Factor：以此比例缩放Canvas中的所有UI元素。
 
 ## Graphic Raycaster
 
-![image-20210312003958642](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312003958642.png)
+![image-20210312003958642](images\image-20210312003958642.png)
 
 只有UI的元素才继承了Graphic基类，才能响应图形射线。Ignore Reversed Graphic：图片翻转后点击无效Blocking Objects：可以阻止射线的Object类型Blocking Mask：可以阻止射线的Mask类型
 
 ## Color
 
-![image-20210312004025873](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312004025873.png)![image-20210312004030362](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312004030362.png)
+![image-20210312004025873](images\image-20210312004025873.png)![image-20210312004030362](images\image-20210312004030362.png)
 
 Color：颜色与透明度
 脚本上有Color、Color32的区别，Color类是Float类型的参数，大小为0 ~ 1，Color32是Int类型参数，大小为0 ~ 255；
@@ -312,7 +312,7 @@ Color：颜色与透明度
 
 # Rect Transform
 
-![image-20210312003328409](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312003328409.png)![image-20210312003331091](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312003331091.png)![image-20210312003338660](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312003338660.png)
+![image-20210312003328409](images\image-20210312003328409.png)![image-20210312003331091](images\image-20210312003331091.png)![image-20210312003338660](images\image-20210312003338660.png)
 
 UGUI对象所特有的组件，区别于Transform
 Pivot：轴点，UI对象旋转的中心点
@@ -323,7 +323,7 @@ Anchors：锚，UI对象所特有的，由四个位于UI对象父物体矩形边
 
 ## 锚点
 
-![image-20210312003518591](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312003518591.png)![image-20210312003522376](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312003522376.png)
+![image-20210312003518591](images\image-20210312003518591.png)![image-20210312003522376](images\image-20210312003522376.png)
 
 锚点：四个点重合的情况。无论如何改变父物体的尺寸， UI子物体Rect Transform四个参数的的值不变，其含义分别为：
 PosX：锚点到UI子物体左边框的垂直距离
@@ -334,7 +334,7 @@ Height：UI子物体的高度
 
 ## 锚线
 
-![image-20210312003550879](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312003550879.png)![image-20210312003554102](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312003554102.png)![image-20210312003557583](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312003557583.png)
+![image-20210312003550879](images\image-20210312003550879.png)![image-20210312003554102](images\image-20210312003554102.png)![image-20210312003557583](images\image-20210312003557583.png)
 
 锚线：两个点重合的情况。改变父物体的尺寸，UI子物体Rect Transform四个参数的值不变，其含义分别为：
 PosX：锚线与UI子物体左边框的垂直距离
@@ -359,9 +359,9 @@ Bottom：下方锚线与 UI子物体下边框的垂直距离
 
 Image/RawImage/Text组件上都会有Raycast  Target这个参数，用来表示是否响应射线。
 
-![image-20210312004156648](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312004156648.png)
+![image-20210312004156648](images\image-20210312004156648.png)
 
-![image-20210312004139900](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210312004139900.png)
+![image-20210312004139900](images\image-20210312004139900.png)
 
 
 

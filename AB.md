@@ -8,7 +8,7 @@
    	1. serialized file：资源被打碎放在一个对象中，最后统一被写进一个单独的文件（只有一个）
     	2. resource files：某些二进制资源（图片、声音）被单独保存，方便快速加载
 
-![image-20210306161555040](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210306161555040.png)
+![image-20210306161555040](images\image-20210306161555040.png)
 
 
 
@@ -25,11 +25,11 @@
 
 # 2. AssetBundle流程
 
-​													![image-20210309001837135](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210309001837135.png)
+​													![image-20210309001837135](images\image-20210309001837135.png)
 
 
 
-![image-20210309001841237](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210309001841237.png)
+![image-20210309001841237](images\image-20210309001841237.png)
 
 
 
@@ -116,7 +116,7 @@
 
 # 4. 依赖打包
 
-![image-20210306171124188](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210306171124188.png)
+![image-20210306171124188](images\image-20210306171124188.png)
 
 # 5. Build AssetBundles
 
@@ -134,35 +134,35 @@
 
    4. BuildTarget : 选择build出来的AB包要使用的平台
 
-![image-20210309002517751](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210309002517751.png)
+![image-20210309002517751](images\image-20210309002517751.png)
 
 # 6. The Manifest File
 
 
 
-![image-20210309002551043](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210309002551043.png)
+![image-20210309002551043](images\image-20210309002551043.png)
 
 # 7. AB依赖
 
-![image-20210309002745427](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210309002745427.png)
+![image-20210309002745427](images\image-20210309002745427.png)
 
 # 8. AssetBundles的使用
 
 1. AssetBundle.LoadFromMemoryAsync
 
-![image-20210309002945937](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210309002945937.png)
+![image-20210309002945937](images\image-20210309002945937.png)
 
 2. AssetBundle.LoadFromFile
 
-![image-20210309002951819](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210309002951819.png)
+![image-20210309002951819](images\image-20210309002951819.png)
 
 3. WWW.LoadFromCacheOrDownload
 
-![image-20210309003001803](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210309003001803.png)
+![image-20210309003001803](images\image-20210309003001803.png)
 
 4. UnityWebRequest
 
-![image-20210309003008639](C:\Users\12746\AppData\Roaming\Typora\typora-user-images\image-20210309003008639.png)
+![image-20210309003008639](images\image-20210309003008639.png)
 
 # 9. Loading Assets from AssetBundles
 
