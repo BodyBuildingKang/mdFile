@@ -66,7 +66,7 @@ flush privileges;
 
 ## 1. 通过ip连接不上的问题 1066
 
-1. 重启了虚拟机需要重新启动mysql服务
+1. 重启了虚拟机需要重新启动mysql服务(开启服务需要root权限)
 2. 需要开启远程访问
 3. [需要关闭防火墙](https://zifeng.blog.csdn.net/article/details/108041744?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-3.control&dist_request_id=&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-3.control)
 4.  。。todo
