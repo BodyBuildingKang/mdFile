@@ -79,10 +79,12 @@ ps :
 
 使用上面方式无法登陆的解决方案
 
-1、停止mysql8 net stop mysql
+1、停止mysql net stop mysql
 
 2、无密码启动mysqld --console --skip-grant-tables --shared-memory
 
 3、前面窗口不能关闭，在开启列外一个新窗口进行无密码登陆mysql -u root -p
 
 4、清空密码update mysql.user set authentication_string='' where user='root' and host='localhost'
+
+5、启动mysql服务必须以管理员权限打开
