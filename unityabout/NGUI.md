@@ -10,7 +10,7 @@
 
 ## 2. UI Root组件
 
-​		![image-20210308234304814](images\image-20210308234304814.png)
+​		![image-20210308234304814](..\images\image-20210308234304814.png)
 
 1. Scaling Style： 缩放比例类型。 UI Root的尺寸会随着分辨率的设置改变进行缩放
 2.  Flexible：灵活的，根据高度，在设置的最小高度到最大高度之间缩放
@@ -18,7 +18,7 @@
 
 ## 3 . UI Panel组件
 
-​		![image-20210308234612667](images\image-20210308234612667.png)
+​		![image-20210308234612667](..\images\image-20210308234612667.png)
 
 1. Alpha：透明度
 2. Depth：深度，显示优先级，数值越大，显示游戏那几越高
@@ -29,7 +29,7 @@
 
 ## 4. UI Camera组件
 
-​		![image-20210308234904331](images\image-20210308234904331.png)
+​		![image-20210308234904331](..\images\image-20210308234904331.png)
 
 1. Debug：用于调试，显示与鼠标交互的对象信息
 2. Command Click：在Mac电脑触控板上用command按键模拟右键操作
@@ -67,7 +67,7 @@
 
 ####  1. Sprite—精灵
 
-​		![image-20210308235733837](images\image-20210308235733837.png)
+​		![image-20210308235733837](..\images\image-20210308235733837.png)
 
 1. Atlas：图集，选择事先创建的图集
 2. Sprite：精灵，选择图集中的精灵图片
@@ -84,7 +84,7 @@
 
 #### 2. Label—文本
 
-​			![image-20210309000115410](images\image-20210309000115410.png)
+​			![image-20210309000115410](..\images\image-20210309000115410.png)
 
 1. Font Size：字体大小
 2. Text：文本内容
@@ -100,7 +100,7 @@
 
 #### 3. Tooltip—提示信息
 
-​				![image-20210309000126082](images\image-20210309000126082.png)
+​				![image-20210309000126082](..\images\image-20210309000126082.png)
 
 1. UI Camera：事件监听相机
 2. Text：提示信息Label
@@ -111,7 +111,7 @@
 
 #### 4. Texture—纹理
 
-​				![image-20210309000221410](images\image-20210309000221410.png)
+​				![image-20210309000221410](..\images\image-20210309000221410.png)
 
 
 
@@ -119,11 +119,11 @@
 
 #### 5. Input Field—输入框
 
-![image-20210309000313695](images\image-20210309000313695.png)
+![image-20210309000313695](..\images\image-20210309000313695.png)
 
-![image-20210309000317812](images\image-20210309000317812.png)
+![image-20210309000317812](..\images\image-20210309000317812.png)
 
-![image-20210309000321101](images\image-20210309000321101.png)
+![image-20210309000321101](..\images\image-20210309000321101.png)
 
 
 
@@ -141,9 +141,9 @@
 
 #### 6. Button—按钮
 
-![image-20210309000415555](images\image-20210309000415555.png)
+![image-20210309000415555](..\images\image-20210309000415555.png)
 
-![image-20210309000419394](images\image-20210309000419394.png)
+![image-20210309000419394](..\images\image-20210309000419394.png)
 
 1. Tween Target:
 2. Drag Over:
@@ -164,11 +164,11 @@
 
 #### 8. Popup List—弹出框/下拉列表
 
-![image-20210309000541464](images\image-20210309000541464.png)
+![image-20210309000541464](..\images\image-20210309000541464.png)
 
-![image-20210309000544454](images\image-20210309000544454.png)
+![image-20210309000544454](..\images\image-20210309000544454.png)
 
-![image-20210309000547099](images\image-20210309000547099.png)
+![image-20210309000547099](..\images\image-20210309000547099.png)
 
 1. Options：选项集合
 2. Position：位置
@@ -185,11 +185,11 @@
 
 #### 9. Slider—滑杆
 
-![image-20210309000650745](images\image-20210309000650745.png)
+![image-20210309000650745](..\images\image-20210309000650745.png)
 
-![image-20210309000654145](images\image-20210309000654145.png)
+![image-20210309000654145](..\images\image-20210309000654145.png)
 
-![image-20210309000656599](images\image-20210309000656599.png)
+![image-20210309000656599](..\images\image-20210309000656599.png)
 
 1. Value:滑杆当前的值
 2. Steps：把滑杆分成若干节，值按照一节一节的变化
@@ -201,11 +201,11 @@
 
 #### 10. Scroll Bar—滚动条
 
-![image-20210309000734500](images\image-20210309000734500.png)
+![image-20210309000734500](..\images\image-20210309000734500.png)
 
-![image-20210309000738293](images\image-20210309000738293.png)
+![image-20210309000738293](..\images\image-20210309000738293.png)
 
-![image-20210309000740817](images\image-20210309000740817.png)
+![image-20210309000740817](..\images\image-20210309000740817.png)
 
 1. Value：滚动条的值
 2. Size：滚动条滚动块的尺寸
@@ -219,11 +219,11 @@
 
 #### 11. Scroll View—滚动视图
 
-![image-20210309000843027](images\image-20210309000843027.png)
+![image-20210309000843027](..\images\image-20210309000843027.png)
 
-![image-20210309000850075](images\image-20210309000850075.png)
+![image-20210309000850075](..\images\image-20210309000850075.png)
 
-![image-20210309000854158](images\image-20210309000854158.png)
+![image-20210309000854158](..\images\image-20210309000854158.png)
 
 ​									`**Scroll View必须要有UI Panel组件，UI Scroll View +UI Drag Scroll View + Collider**`
 
