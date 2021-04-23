@@ -8,43 +8,46 @@
 
 ##   第一步 卸载旧的安装包
 
+```
  yum remove docker \
+         docker-client \
+         docker-client-latest \
+         docker-common \
+         docker-latest \
+         docker-latest-logrotate \
+         docker-logrotate \
+         docker-engine
+```
 
-​         docker-client \
 
-​         docker-client-latest \
-
-​         docker-common \
-
-​         docker-latest \
-
-​         docker-latest-logrotate \
-
-​         docker-logrotate \
-
-​         docker-engine
 
 ​         
 
 ##   第二步  安装需要的安装包
 
+```
 yum install -y yum-utils
+```
+
+
 
 ##    第三步 设置镜像的仓库
 
+```
  yum-config-manager \
-
   --add-repo \
-
   https://download.docker.com/linux/centos/docker-ce.repo  --默认是国外的
+```
 
 \#如果没有vpn 建议安装阿里云的   
 
+```
 yum-config-manager \
-
  --add-repo \
-
  http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+```
+
+
 
 ##    更新yum 索引安装包
 
