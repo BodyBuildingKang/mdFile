@@ -2,7 +2,7 @@
 
 1. create database db;
 2. alter database db default character set utf8 collate utf8_general_ci;  ## 设置编码格式
-3. show database db;
+3. show databases;
 4. show create database db;
 5. use db;
 6. create table tb;
