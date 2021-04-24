@@ -169,3 +169,21 @@ echo “route add -net 9.123.0.0 netmask 255.255.0.0 gw 9.123.0.1” >> /etc/rc.
 实际中发现，CentOS7.4默认环境下，rc.local中不会执行，需要赋权才可以
 chmod +x /etc/rc.local
 ```
+
+## 9. 关机 重启
+ 
+```
+Linux centos重启命令：
+　　1、reboot   普通重启
+　　2、shutdown -r now 立刻重启(root用户使用)
+　　3、shutdown -r 10 过10分钟自动重启(root用户使用)
+　　4、shutdown -r 20:35 在时间为20:35时候重启(root用户使用)
+　　如果是通过shutdown命令设置重启的话，可以用shutdown -c命令取消重启
+Linux centos关机命令：
+　　1、halt 立刻关机
+　　2、poweroff 立刻关机
+　　3、shutdown -h now 立刻关机(root用户使用)
+　　4、shutdown -h 10 10分钟后自动关机
+　　如果是通过shutdown命令设置关机的话，可以用shutdown -c命令取消重启
+
+```
