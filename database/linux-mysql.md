@@ -8,28 +8,43 @@
 
 ##  解压上传的tar.gz
 
+```
+
 1. tar -zxvf 【下载的包名】
+```
+
 
 ## 把解压的文件移动到/usr/local目录下面
 
+```
 1. mv 【解压的包名】 /usr/local/mysql
+```
+
 
 ## 添加MySQL组和用户(默认会添加，没有添加就自己添加)
 
+```
+groupadd mysql
+useradd -r -g mysql mysql
+
 cd /usr/local/mysql
 chown -R mysql:mysql ./
+```
+
 
 ## mysql初始化操作,记录下临时密码,之后第一次登录的时候会用
 到。
 
+```
 ./mysqld --initialize --user=mysql --basedir=/usr/local/mysql --datadir=/usr/local/mysql/data
 
 密码 fVdpg:bM9pAk
+```
+KBfkvqMg0*:
 
 ## 创建MySQL配置文件/etc/my.cnf
 
-
-
+```
 [mysqld]
 port=3306
 basedir=/usr/local/mysql
@@ -45,22 +60,34 @@ default-character-set=utf8mb4
 port=3306
 default-character-set=utf8mb4
 
+```
+
 ## 启动MySQL服务
 
+```
 cd /usr/local/mysql/support-files
 
 ./mysql.server start
 
+```
+
 ## 通过临时密码登录MYSQL并修改密码
 
+```
 ./mysql -u root -p密码
 alter user 'root'@'localhost' identified by '123';
+```
+
 
 ## 开启远程访问
 
+```
 CREATE USER 'root'@'%' IDENTIFIED BY '123'; -- 这一步执行失败没关系
 GRANT ALL ON *.* TO 'root'@'%';
 flush privileges;
+```
+
+
 
 # 问题
 
