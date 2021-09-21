@@ -53,9 +53,9 @@
                 BuildPipeline.BuildAssetBundles(assetBundleDirectory,BuildAssetBundleOptions.None, 					BuildTarget.StandaloneWindows);
             } 
         }
-        ```
-   
-     
+       ```
+
+
 3. 上传AssetBundle包
 	
     	1. 
@@ -75,7 +75,7 @@
                 Instantiate(prefab);
             }
         }
-        ```
+    ```
      ```c#
    IEnumerator InstantiateObject()
        {
@@ -89,9 +89,8 @@
             Instantiate(cube);
             Instantiate(sprite);
         }
-        ```
-        
-
+    ```
+   
 5.  AssetBundle使用相关API
    1. BuildPipeline.BuildAssetBundles(dir, BuildAssetBundleOptions.None, BuildTarget.StandaloneWindows64);
    2. AssetBundle ab = AssetBundle.LoadFromFile("AssetBundles/scene/wall.unity3d");
