@@ -29,5 +29,52 @@ public static void BubbleSort(int[] array)
 
 2. 选择排序
 
-   a.  
+   a.  首先找到最大(小)数，然后存放起始位置，然后再用剩余未排序数找到最大(小)数，如此反复进行到最后(内层循环找到最大(小)数的索引进行保存,结束一次内循环后进行位置交换)
+   
+   b.  任何时候的时间复杂度都O(n2),数据规模越小越好
+   
+   ![selectionSort](images/selectionSort.gif)
+   
+   ~~~c#
+   public static void SelectSort(int[] array)
+   {
+       int minIndex;
+       int temp;
+       for(int i = 0; i < array.Length; i++)
+       {
+           minIndex = i;
+           for(int j = i + 1; j < array.Length; j++)
+           {
+               if(array[minIndex] > array[j])
+               {
+                   minIndex = j;
+               }
+           }
+           temp = array[i];
+           array[i] = array[minIndex];
+           array[minIndex] = temp;
+
+       }
+   }
+   ~~~
+
+
+   3. 插入排序
+
+    a.  
+    
+    b.
+
+   ![insertionSort](images/insertionSort.gif)
+
+
+   ~~~c#
+   public static void InsertionSort(int[] array)
+   {
+       
+   }
+   ~~~
+   
+   
+   
 
