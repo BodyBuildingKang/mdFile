@@ -3,7 +3,7 @@
    2. ![bubbleSort](images/bubbleSort.gif)
 
 ```c#
-public static void BubbleSort(int[] array)
+public static int[] BubbleSort(int[] array)
 {
     int temp;
     bool Swap;
@@ -24,6 +24,8 @@ public static void BubbleSort(int[] array)
         if(!Swap)
             return
     }
+    
+    return array
 }
 ```
 
@@ -36,7 +38,7 @@ public static void BubbleSort(int[] array)
    ![selectionSort](images/selectionSort.gif)
    
    ~~~c#
-   public static void SelectSort(int[] array)
+   public static int[] SelectSort(int[] array)
    {
        int minIndex;
        int temp;
@@ -53,15 +55,15 @@ public static void BubbleSort(int[] array)
            temp = array[i];
            array[i] = array[minIndex];
            array[minIndex] = temp;
-
        }
+       return array
    }
    ~~~
 
 
    3. 插入排序
 
-    a.  
+    a.  把首位数作为有序数列，然后从下一位开始向前进行比较，若比之小则交换位置，直到与首位进行比较结束本次循环
     
     b.
 
@@ -69,12 +71,28 @@ public static void BubbleSort(int[] array)
 
 
    ~~~c#
-   public static void InsertionSort(int[] array)
+   public static int[] InsertionSort(int[] array)
    {
-       
+       int temp;
+       for(int i = 0; i < array.Length; i++)
+       {
+           for(int j = i; j <= 0; j--)
+           {
+               if(array[i] >= array[j+1])
+               {
+                   array[j+1] = array[i];
+                   temp = array[i];
+                   array[j+1] = temp;
+               }
+               else
+               {
+                   break;
+               }
+           }
+       }
+       return array;
    }
    ~~~
-   
-   
+
    
 
