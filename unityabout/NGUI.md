@@ -21,7 +21,7 @@
 ​		![image-20210308234612667](..\images\image-20210308234612667.png)
 
 1. Alpha：透明度
-2. Depth：深度，显示优先级，数值越大，显示游戏那几越高
+2. Depth：深度，显示优先级，数值越大，显示游戏层级越高
 3. Clipping： 裁剪方式
 4. Texture Mask：纹理遮罩
 5. Soft Clip：细致裁剪
